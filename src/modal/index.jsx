@@ -8,11 +8,12 @@ var Modal = React.createClass({
     return { open: false };
   },
   getDefaultProps: function () {
-    return { 
+    return {
       overlay: true,
       overlayClose: true,
       animationIn: 'fadeIn',
-      animationOut: 'fadeOut'
+      animationOut: 'fadeOut',
+      onClose: null
     };
   },
   componentDidMount: function () {
